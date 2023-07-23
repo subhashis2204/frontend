@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+  background: white;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover::before{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background: #2a68ff;
+  right: 0;
+  bottom: -10px;
+  color: #2a68ff;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.card{
+  background: gainsboro;
+}
+
+
+.alert-container {
+  margin: 15px;
+  display: flex;
+}
+
+.symbol-container {
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 1.75rem;
+}
+
+.description-container {
+  font-size: 1.05rem;
+  margin: 15px 20px;
+  width: 100%;
+}
+
+.description-title {
+  font-weight: 700;
+}
+
+.symbol-close-link {
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+
+.register{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 978px;
+  width: 1200px;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  background-color: white;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img{
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* display: none; */
+}
+
+
+.card-container {
+  width: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 8px #999;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  background-color: white;
+  height: fit-content;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-title {
+  text-decoration:solid;
+  margin: 0.5rem 5%;
+}
+
+.card-description {
+  margin: 0.5rem 5%;
+}
+
+.card-btn {
+  text-align: center;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0.5rem;
+}
